@@ -4,9 +4,9 @@ class Subject extends Component {
       console.log('Subject render');
       return (
         <header>
-            <h1>{this.props.title}</h1>
-            <h1><a href="/">{this.props.title}</a></h1>
-            {this.props.sub}
+           <h1><a href="/" onClick={function(e){
+               e.preventDefault();
+           }}></a></h1>
         </header>  
       );
     }
